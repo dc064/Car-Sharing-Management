@@ -1,0 +1,23 @@
+﻿<Window x:Class="CarSharingManagement.AddShareWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarSharingManagement"
+        mc:Ignorable="d"
+        Title="AddShareWindow" Height="466" Width="531">
+    <Grid Margin="0,0,10,4">
+        <DatePicker x:Name="AddShareFromDataPicker" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Height="27" Width="187"/>
+        <DatePicker x:Name="AddShareToDataPicker" HorizontalAlignment="Center" Margin="0,339,0,0" VerticalAlignment="Top" Height="31" Width="187"/>
+        <Label x:Name="AddShareLabel" Content="Register a new car share" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.352,1.446" Height="38" Width="233" FontSize="20" FontFamily="Bahnschrift"/>
+        <ComboBox x:Name="ShareCustomerComboBox" HorizontalAlignment="Center" Margin="0,239,0,0" VerticalAlignment="Top" Width="187" Height="27" SelectionChanged="ShareCustomerComboBox_SelectionChanged"/>
+        <Label x:Name="ShareCarLabel" Content="Car:" HorizontalAlignment="Left" Margin="120,191,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ShareCustomerLabel" Content="Customer:" HorizontalAlignment="Left" Margin="103,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ShareFromDateLabel" Content="From:" HorizontalAlignment="Left" Margin="116,295,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ShareToDateLabel" Content="To:" HorizontalAlignment="Left" Margin="124,344,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="DeclineButton" Content="Decline" HorizontalAlignment="Left" Margin="116,395,0,0" VerticalAlignment="Top" Height="20" Width="93" Click="DeclineButton_Click"/>
+        <Button x:Name="ApplyButton" Content="Apply" HorizontalAlignment="Left" Margin="286,395,0,0" VerticalAlignment="Top" Height="20" Width="91" Click="ApplyButton_Click"/>
+        <ComboBox x:Name="ShareCarComboBox" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="187" SelectionChanged="ShareCarComboBox_SelectionChanged"/>
+
+    </Grid>
+</Window>

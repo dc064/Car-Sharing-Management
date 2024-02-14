@@ -1,0 +1,21 @@
+﻿<Window x:Class="CarSharingManagement.AddCustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarSharingManagement"
+        mc:Ignorable="d"
+        Title="AddCustomerWindow" Height="450" Width="428">
+    <Grid>
+        <Button x:Name="DeclineButton" Content="Decline" HorizontalAlignment="Left" Margin="66,384,0,0" VerticalAlignment="Top" Width="106" Click="DeclineButton_Click"/>
+        <Button x:Name="ApplyButton" Content="Apply" HorizontalAlignment="Left" Margin="264,384,0,0" VerticalAlignment="Top" Width="106" Click="ApplyButton_Click"/>
+        <TextBox x:Name="CustomerNameTextBox" HorizontalAlignment="Left" Margin="131,133,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="186" TextChanged="CustomerNameTextBox_TextChanged"/>
+        <TextBox x:Name="CustomerSurnameTextBox" HorizontalAlignment="Left" Margin="131,199,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" Width="186" TextChanged="CustomerSurnameTextBox_TextChanged"/>
+        <TextBox x:Name="CustomerEmailTextBox" HorizontalAlignment="Left" Margin="131,260,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Width="186" TextChanged="CustomerEmailTextBox_TextChanged"/>
+        <Label x:Name="CustomerNameLabel" Content="Name:" HorizontalAlignment="Left" Margin="66,129,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="CustomerSurnameLabel" Content="Surname:" HorizontalAlignment="Left" Margin="66,195,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="CustomerEmailLabel" Content="E-mail:" HorizontalAlignment="Left" Margin="66,256,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="CustomerLabel" Content="Add Customer" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" Width="90"/>
+
+    </Grid>
+</Window>
